@@ -5,9 +5,9 @@ import java.util.Date;
 public class Expense {
     private int _id;
     private String _name;
-    private Date _date;
+    private long _date;
 
-    public Expense(String _name, Date _date) {
+    public Expense(String _name, long _date) {
         this._name = _name;
         this._date = _date;
     }
@@ -20,7 +20,7 @@ public class Expense {
         return _name;
     }
 
-    public Date get_date() {
+    public long get_date() {
         return _date;
     }
 
@@ -32,7 +32,7 @@ public class Expense {
         this._name = _name;
     }
 
-    public void set_date(Date _date) {
+    public void set_date(int _date) {
         this._date = _date;
     }
 }

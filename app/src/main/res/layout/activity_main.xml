@@ -41,17 +41,33 @@
         android:layout_marginTop="160dp"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button2"
+        <EditText
+            android:id="@+id/inputText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_item"/>
+            android:ems="10"
+            android:hint="Enter expense name here"
+            android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/addItemButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="dummy" />
+            android:onClick="addItemButtonClicked"
+            android:text="@string/add_item" />
+
+        <Button
+            android:id="@+id/deleteItemButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteItemButtonClicked"
+            android:text="Delete item" />
+
+        <TextView
+            android:id="@+id/dbContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contents will appear here" />
     </LinearLayout>
 
 </RelativeLayout>
